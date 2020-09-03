@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,body
+{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppine' sans-serif;
+  color: #222;
+}
+.navbar
+{
+  padding: .8rem;
+}
+.navbar-nav li
+{
+  padding-right: 15px;
+}
+.navbar-img 
+{
+  height: 50px;
+}
+.color
+{
+  border-radius: 20%;
+  color: white;
+  background-color: #c842f5;
+}
+.colors 
+{
+  color: #c842f5
+}
+.nav-link
+{
+  font-size: 1.2em !important;
+}
+.title-text
+{
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card
+{
+  text-shadow: 1px 1px 15px blue;
+}
+.card:hover
+{
+  background: #c842f5;
+  color: white;
+}
+
+.carousel-inner img
+{
+ height:  30%;
+ width: 100%;
+ border: 2px solid gray;
+}
+.carousel-inner span
+{
+  color: darkblue;
+  font-weight: bold;
+  font-size: 22px;
+}
+.carousel-inner button
+{
+  margin-left: 50px;
+}
+.carousel-inner div
+{
+  margin-bottom: 150px;
+}
+.data
+{
+  margin-left: 60px
+}
+.data1
+{
+  margin-left: 30px
+}
+.text
+{
+  margin-left: 20px;
+  margin-bottom: 20px
+}
+.m
+{
+  margin-right: 90px;
+  border-color: blue
+}
+.l
+{
+  margin-right: 140px;
+  border-color: blue
+}
+.n
+{
+  margin-right: 100px;
+  border-color: blue
+}
+.o
+{
+  margin-right: 120px;
+  border-color: blue
+}
+
+/*---Welcome section --*/
+.padding
+{
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+
+
+/*--footer--*/
+footer
+{
+  background-color: light;
+  color: darkgray;
+  padding-top: 2rem;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px)
+{
+  .social a
+  {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) 
+{
+     .carousel-caption
+    {
+      top: 45%;
+      transform: translateY(-50%);
+    }
+    .carousel-caption h1
+    {
+      font-size: 350%;
+    }
+    .carousel-caption h3
+    {
+      font-size: 130%
+      font-weight: 300;
+      padding-bottom: .3rem;
+    } 
+    .carousel-caption .btn
+    {
+      font-size: 95%;
+      padding: 8px 14px;
+    }
+    .display-4
+    {
+      font-size: 200%;
+    }
+    .social a
+    {
+      font-size: 2.5rem;
+      padding: 1.2rem;
+    }
+}
+@media (max-width: 576px) 
+{
+  .carousel-caption
+    {
+      top: 40%;
+      transform: translateY(-50%);
+    }
+    .carousel-caption h1
+    {
+      font-size: 350%;
+    }
+    .carousel-caption h3
+    {
+      font-size: 120%
+    } 
+    .carousel-caption .btn
+    {
+      font-size: 90%;
+      padding: 4px 8px;
+    }  
+    .carousel-indicators
+    {
+      display: none;
+    }
+     .display-4
+    {
+      font-size: 160%;
+    }
+    .social a
+    {
+      font-size: 2rem;
+      padding: .7rem;
+    }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
